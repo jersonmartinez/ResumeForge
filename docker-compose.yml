@@ -11,3 +11,4 @@ services:
       - ./output:/workspace/output
     environment:
       PYTHONUNBUFFERED: "1"
+      PDF_PASSWORD: "${PDF_PASSWORD:-}"

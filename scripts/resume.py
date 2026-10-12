@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import argparse
+import os
+import secrets
 import shutil
 import subprocess
 import sys
@@ -159,6 +161,23 @@ def load_profile(name: str) -> dict[str, Any]:
     return profile
 
 
+def encrypt_pdf(source: Path, destination: Path, user_password: str) -> None:
+    if len(user_password) > 40:
+        raise ResumeError("PDF_PASSWORD must be 40 characters or fewer")
+    encrypted = destination.with_suffix(".encrypted.pdf")
+    document = fitz.open(source)
+    permissions = int(fitz.PDF_PERM_ACCESSIBILITY | fitz.PDF_PERM_PRINT)
+    document.save(
+        encrypted,
+        encryption=fitz.PDF_ENCRYPT_AES_256,
+        owner_pw=secrets.token_hex(16),
+        user_pw=user_password,
+        permissions=permissions,
+    )
+    document.close()
+    encrypted.replace(destination)
+
+
 def render(data: dict[str, Any], profile: dict[str, Any], language: str) -> Path:
     validate_model(data, profile, language)
     context = build_context(data, profile, language)
@@ -210,7 +229,12 @@ def render(data: dict[str, Any], profile: dict[str, Any], language: str) -> Path
     OUTPUT_PATH.mkdir(exist_ok=True)
     output_path = OUTPUT_PATH / f"{profile['name']}-{language}.pdf"
     shutil.copy2(pdf_path, output_path)
-    print(f"Generated {output_path.relative_to(ROOT)} ({page_count} pages)")
+    password = os.environ.get("PDF_PASSWORD")
+    if password:
+        encrypt_pdf(output_path, output_path, password)
+        print(f"Generated encrypted {output_path.relative_to(ROOT)} ({page_count} pages)")
+    else:
+        print(f"Generated {output_path.relative_to(ROOT)} ({page_count} pages)")
     return output_path
 
 

@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build-example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build ResumeForge image
+        run: docker compose build resume
+
+      - name: Validate example profile
+        run: docker compose run --rm resume validate --profile example
+
+      - name: Build synthetic English and Spanish PDFs
+        run: docker compose run --rm resume build --profile example
+
+      - name: Upload synthetic PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: resumeforge-example-pdfs
+          path: output/example-*.pdf
+          if-no-files-found: error

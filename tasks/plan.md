@@ -44,9 +44,9 @@ Build a local-first CV generation toolkit that renders bilingual, job-specific P
 
 ### Phase 3: Delivery and automation
 
-- [ ] Add optional PDF encryption using a runtime-provided password.
-- [ ] Add local and CI documentation for secrets and artifact handling.
-- [ ] Add GitHub Actions validation and synthetic PDF artifact generation.
+- [x] Add optional PDF encryption using a runtime-provided password.
+- [x] Add local and CI documentation for secrets and artifact handling.
+- [x] Add GitHub Actions validation and synthetic PDF artifact generation.
 - [ ] Add agent prompts for creating and reviewing job profiles.
 - [ ] Document how to add a new template.
 
