@@ -1,0 +1,80 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{microtype}
+
+\setmainfont{TeX Gyre Heros}
+\setdefaultlanguage{<< latex_language >>}
+\geometry{top=1.25cm,bottom=1.15cm,left=1.35cm,right=1.35cm}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.25em}
+\definecolor{ResumeBlue}{HTML}{0057B8}
+\definecolor{ResumePurple}{HTML}{5C2D91}
+\definecolor{RESUMEPURPLE}{HTML}{5C2D91}
+\hypersetup{colorlinks=true,urlcolor=ResumeBlue,linkcolor=ResumeBlue}
+\titleformat{\section}{\large\bfseries\MakeUppercase}{}{0pt}{}[\vspace{-0.35em}\color{ResumePurple}\rule{\linewidth}{0.8pt}]
+\titlespacing*{\section}{0pt}{0.55em}{0.25em}
+\setlist[itemize]{leftmargin=1.25em,itemsep=0.05em,topsep=0.05em,parsep=0pt}
+\setlist[itemize,2]{leftmargin=1.1em,itemsep=0pt,topsep=0pt}
+
+\newcommand{\entry}[4]{%
+  \textbf{#1}\\[-0.1em]
+  \hspace{0.8em}\textbf{#2} \hfill \textit{#3}\\[-0.1em]
+  \begin{itemize}
+    #4
+  \end{itemize}
+  \vspace{0.15em}
+}
+
+\begin{document}
+
+\begin{minipage}[t]{0.56\textwidth}
+  {\LARGE\textbf{ << personal.name|latex >> }}\\[0.25em]
+  {\large\textbf{ << personal.headline|latex >> }}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.40\textwidth}\raggedleft
+  \href{tel:<< personal.phone|url >>}{ << personal.phone|latex >> } (<< personal.location|latex >>)\\
+  \href{mailto:<< personal.email|url >>}{ << personal.email|latex >> }\\
+  \href{<< personal.linkedin|url >>}{ << personal.linkedin|latex >> }\\
+  \href{<< personal.website|url >>}{ << personal.website|latex >> }
+\end{minipage}
+
+\vspace{0.35em}
+\color{ResumePurple}\rule{\linewidth}{1.2pt}
+\color{black}
+
+<< summary|latex >>
+
+\section{ << labels.experience|latex >> }
+[% for item in experience %]
+\entry{ << item.title|latex >> }{ << item.company|latex >> }{ << item.dates|latex >> }{%
+[% for bullet in item.bullets %]\item << bullet|latex >>
+[% endfor %]}
+[% endfor %]
+
+\section{ << labels.skills|latex >> }
+\begin{itemize}
+[% for skill in skills %]\item \textbf{ << skill.name|latex >>:} << skill["values"]|latex >>
+[% endfor %]\end{itemize}
+
+\section{ << labels.education|latex >> }
+[% for item in education %]
+\textbf{ << item.title|latex >> }\\[-0.1em]
+\hspace{0.8em}\textbf{ << item.institution|latex >> } \hfill \textit{ << item.dates|latex >> }\\[0.25em]
+[% endfor %]
+
+\section{ << labels.certifications|latex >> }
+\begin{itemize}
+[% for item in certifications %]\item \textbf{ << item.issuer|latex >>:} << item.name|latex >>
+[% endfor %]\end{itemize}
+
+\end{document}

@@ -1,0 +1,15 @@
+name: example
+summary:
+  en: data/summaries/example.en.md
+  es: data/summaries/example.es.md
+include:
+  experience:
+    - platform-lead
+    - cloud-engineer
+    - systems-engineer
+  skills:
+    - Cloud and Infrastructure
+    - Infrastructure as Code
+    - Delivery and Observability
+    - Development
+    - Languages

@@ -17,30 +17,30 @@ Build a local-first CV generation toolkit that renders bilingual, job-specific P
 
 ### Phase 1: Foundation
 
-- [ ] Define the data schema for shared content, localized strings, and job profiles.
-- [ ] Select and verify the LaTeX engine, base image, and multilingual package set.
-- [ ] Add the Docker Compose command surface and a minimal container entrypoint.
-- [ ] Add synthetic English and Spanish example data.
+- [x] Define the data schema for shared content, localized strings, and job profiles.
+- [x] Select the initial LaTeX engine and verify the multilingual package direction from the reference documents.
+- [x] Add the Docker Compose command surface and a minimal container entrypoint.
+- [x] Add synthetic English and Spanish example data following the reference content model.
 
 ### Checkpoint: Foundation
 
-- [ ] Docker image builds successfully.
-- [ ] The example configuration validates.
-- [ ] The repository has no required personal data.
+- [x] Docker image builds successfully.
+- [x] The example configuration validates.
+- [x] The repository has no required personal data.
 
 ### Phase 2: Rendering
 
-- [ ] Implement safe YAML/Markdown loading and LaTeX escaping.
-- [ ] Implement profile filtering and deterministic ordering.
-- [ ] Implement the first professional LaTeX template.
-- [ ] Compile English and Spanish PDFs.
-- [ ] Enforce the one-to-three-page requirement.
+- [x] Implement safe YAML/Markdown loading and LaTeX escaping.
+- [x] Implement profile filtering and deterministic ordering.
+- [x] Implement the first professional LaTeX template.
+- [x] Compile English and Spanish PDFs.
+- [x] Enforce the one-to-three-page requirement.
 
 ### Checkpoint: Rendering
 
-- [ ] Both language variants compile locally through Docker Compose.
-- [ ] Invalid configuration fails before compilation.
-- [ ] Generated files are written to the documented output location.
+- [x] Both language variants compile locally through Docker Compose.
+- [x] Invalid configuration fails before compilation.
+- [x] Generated files are written to the documented output location.
 
 ### Phase 3: Delivery and automation
 
@@ -55,7 +55,7 @@ Build a local-first CV generation toolkit that renders bilingual, job-specific P
 - [ ] Full validation suite passes.
 - [ ] CI builds the synthetic example without personal secrets.
 - [ ] README and troubleshooting documentation are complete.
-- [ ] Reference PDF analysis is incorporated after the user supplies it.
+- [x] Reference PDF and DOCX analysis is incorporated into the initial layout and data model.
 
 ## Risks and mitigations
 

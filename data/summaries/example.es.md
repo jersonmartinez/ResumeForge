@@ -1,0 +1,1 @@
+Ingeniero senior de plataformas y nube con más de 9 años de experiencia diseñando, automatizando y operando infraestructura confiable en AWS, Azure y Kubernetes. Especializado en Infraestructura como Código, plataformas de delivery seguras, observabilidad y programas de modernización que mejoran la resiliencia, velocidad de entrega y eficiencia operativa.

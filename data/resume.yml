@@ -1,0 +1,98 @@
+personal:
+  name: Alex Rivera
+  headline:
+    en: Senior Platform Engineer | DevOps | Cloud Architect
+    es: Ingeniero Senior de Plataformas | DevOps | Arquitectura Cloud
+  phone: "+1 555 010 2026"
+  location: "Remote | UTC-5"
+  email: alex.rivera@example.com
+  linkedin: https://www.linkedin.com/in/alex-rivera-example/
+  website: https://example.com
+
+experience:
+  - id: platform-lead
+    title:
+      en: Platform Engineering Lead
+      es: Líder de Ingeniería de Plataformas
+    company: Northstar Systems
+    dates:
+      en: January 2023 - Present
+      es: Enero 2023 - Actualidad
+    bullets:
+      en:
+        - Led a platform modernization program across AWS and Kubernetes environments.
+        - Reduced deployment lead time by 45% through reusable infrastructure and delivery patterns.
+      es:
+        - Lideré un programa de modernización de plataformas en entornos AWS y Kubernetes.
+        - Reduje el tiempo de entrega en un 45% mediante patrones reutilizables de infraestructura y delivery.
+  - id: cloud-engineer
+    title:
+      en: Cloud Infrastructure Engineer
+      es: Ingeniero de Infraestructura Cloud
+    company: Acme Digital
+    dates:
+      en: March 2020 - December 2022
+      es: Marzo 2020 - Diciembre 2022
+    bullets:
+      en:
+        - Designed secure cloud foundations with Terraform, GitHub Actions, and policy controls.
+        - Improved service reliability with observability, backup, and disaster recovery practices.
+      es:
+        - Diseñé fundamentos cloud seguros con Terraform, GitHub Actions y controles de políticas.
+        - Mejoré la confiabilidad mediante observabilidad, respaldos y prácticas de recuperación ante desastres.
+  - id: systems-engineer
+    title:
+      en: Systems Engineer
+      es: Ingeniero de Sistemas
+    company: Contoso Labs
+    dates:
+      en: July 2017 - February 2020
+      es: Julio 2017 - Febrero 2020
+    bullets:
+      en:
+        - Automated Linux and Windows operations with Python, PowerShell, and Ansible.
+        - Standardized infrastructure documentation and operational runbooks.
+      es:
+        - Automaticé operaciones Linux y Windows con Python, PowerShell y Ansible.
+        - Estandaricé la documentación de infraestructura y los procedimientos operativos.
+
+skills:
+  - name:
+      en: Cloud and Infrastructure
+      es: Nube e Infraestructura
+    values: AWS, Azure, GCP, Linux, Windows Server, Kubernetes, Docker
+  - name:
+      en: Infrastructure as Code
+      es: Infraestructura como Código
+    values: Terraform, Ansible, Pulumi, CloudFormation
+  - name:
+      en: Delivery and Observability
+      es: Delivery y Observabilidad
+    values: GitHub Actions, GitLab CI, Prometheus, Grafana, ELK Stack
+  - name:
+      en: Development
+      es: Desarrollo
+    values: Python, Go, Bash, PowerShell, SQL
+  - name:
+      en: Languages
+      es: Idiomas
+    values:
+      en: Spanish (Native) | English (Professional Working Proficiency)
+      es: Español (Nativo) | Inglés (Competencia Profesional)
+
+education:
+  - title:
+      en: B.Sc. in Computer Engineering
+      es: Ingeniería en Computación
+    institution: Example State University
+    dates:
+      en: 2013 - 2017
+      es: 2013 - 2017
+
+certifications:
+  - name: AWS Certified Solutions Architect - Associate
+    issuer: Amazon Web Services
+  - name: Certified Kubernetes Administrator
+    issuer: Cloud Native Computing Foundation
+  - name: "HashiCorp Certified: Terraform Associate"
+    issuer: HashiCorp

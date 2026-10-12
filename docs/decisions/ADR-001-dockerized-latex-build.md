@@ -10,7 +10,9 @@ ResumeForge must generate reproducible PDFs for users on Windows, macOS, and Lin
 
 ## Decision
 
-Use Docker and Docker Compose as the primary build interface. The repository will provide a versioned build image containing the required rendering and validation tools. Generated files will be mounted to a local output directory.
+Use Docker and Docker Compose as the primary build interface. The repository uses the `texlive/texlive:latest-small` image pinned by digest and adds the Python rendering and validation dependencies. Generated files are mounted to a local output directory.
+
+The initial implementation uses XeLaTeX with `fontspec` and `polyglossia`. The TeX Live image is maintained by the Island of TeX project: <https://github.com/islandoftex/texlive/>.
 
 ## Alternatives considered
 

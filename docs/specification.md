@@ -23,7 +23,9 @@ The first release targets technically comfortable users who can edit YAML, Markd
 - Local command interface: profile-based commands such as `build --profile <name>`.
 - Optional PDF encryption: local environment variable or GitHub Actions secret; secrets must not be committed or logged.
 - CI/CD: add only useful validation and artifact generation workflows.
-- Reference material: a user-provided reference file can be placed in `reference/`.
+- Reference material: user-provided PDF and DOCX files can be placed in `reference/`; the PDF is the visual source of truth and the DOCX is supplementary for editable text structure.
+- Reference layout: A4, two pages in both languages, single-column body, two-column contact header, blue hyperlinks, and a purple section divider.
+- Reference content model: profile header, summary, experience, skills, education, and certifications.
 
 ## Commands
 
@@ -146,6 +148,6 @@ The first CI workflow should avoid publishing real personal data. It may publish
 
 ## Open questions
 
-- The visual design and exact page geometry will be finalized after the reference PDF is added.
-- The final LaTeX engine and base image will be selected after testing font and multilingual support.
+- The reference establishes A4 and a two-page target for the initial template; exact font and spacing values will be tuned after the first LaTeX render.
+- The initial rendering slice will use XeLaTeX with `fontspec` and `polyglossia`; the final base image tag will be pinned after the first successful build.
 - GitHub Pages will be considered for documentation or synthetic examples, not assumed for private CV delivery.

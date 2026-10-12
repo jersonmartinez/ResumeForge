@@ -1,0 +1,1 @@
+Senior platform and cloud engineer with 9+ years of experience designing, automating, and operating reliable infrastructure across AWS, Azure, and Kubernetes. Specialized in Infrastructure as Code, secure delivery platforms, observability, and modernization programs that improve resilience, delivery speed, and operational efficiency.

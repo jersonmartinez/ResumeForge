@@ -1,0 +1,13 @@
+services:
+  resume:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    profiles:
+      - resume
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+      - ./output:/workspace/output
+    environment:
+      PYTHONUNBUFFERED: "1"

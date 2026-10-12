@@ -15,16 +15,18 @@ The project separates content from presentation:
 - Job-specific profiles select, prioritize, and customize content.
 - Agent instructions help an AI assistant create or review tailored profiles without requiring a provider-specific API integration.
 
-> Project status: initial foundation. The reference directory is intentionally empty so a visual reference PDF can be added before the first template is finalized.
+> Project status: the first Dockerized bilingual rendering slice is available. The supplied references are documented in [`docs/reference-analysis.md`](docs/reference-analysis.md), and the initial template will continue to be refined against them.
 
-## Planned quick start
+## Quick start
 
 ```bash
 docker compose run --rm resume validate --profile example
 docker compose run --rm resume build --profile example
 ```
 
-Generated files will be written to `output/` and will not be committed by default.
+The profile command builds both English and Spanish PDFs by default. To build one language only, add `--language en` or `--language es`. Generated files are written to `output/` and are not committed by default.
+
+The current synthetic profile uses the same structure as the supplied references. Replace the contents of `data/`, add a profile under `profiles/`, and keep longer summaries in `data/summaries/`.
 
 ## Repository layout
 

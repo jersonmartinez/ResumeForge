@@ -8,6 +8,7 @@ output/
 *.fdb_latexmk
 *.synctex.gz
 *.tex.generated
+.resume-build/
 
 # Local personal data and secrets
 .env
@@ -17,6 +18,7 @@ secrets/
 
 # Local reference exports that should not be committed by default
 reference/private/
+reference/.analysis/
 
 # Python tooling
 __pycache__/

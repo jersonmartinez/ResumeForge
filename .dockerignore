@@ -1,0 +1,7 @@
+.git
+.github
+output
+.resume-build
+reference
+__pycache__
+*.pyc
