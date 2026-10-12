@@ -3,7 +3,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Docker Compose](https://img.shields.io/badge/Docker%20Compose-required-2496ED?logo=docker&logoColor=white)](https://docs.docker.com/compose/)
 [![LaTeX](https://img.shields.io/badge/LaTeX-reproducible-008080?logo=latex&logoColor=white)](https://www.latex-project.org/)
-[![CI](https://github.com/jersonmartinez/ResumeForge/actions/workflows/ci.yml/badge.svg)](https://github.com/jersonmartinez/ResumeForge/actions/workflows/ci.yml)
 
 ResumeForge is a Dockerized, open-source toolkit for maintaining one professional profile and generating tailored CV versions for different job applications.
 
