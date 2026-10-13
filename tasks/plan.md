@@ -35,6 +35,7 @@ Build a local-first CV generation toolkit that renders bilingual, job-specific P
 - [x] Implement the first professional LaTeX template.
 - [x] Compile English and Spanish PDFs.
 - [x] Enforce the one-to-three-page requirement.
+- [x] Add the first real bilingual DevOps Engineer dataset and profile.
 
 ### Checkpoint: Rendering
 

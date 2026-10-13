@@ -161,6 +161,13 @@ def load_profile(name: str) -> dict[str, Any]:
     return profile
 
 
+def load_profile_data(profile: dict[str, Any]) -> dict[str, Any]:
+    relative_path = Path(profile.get("data", "data/resume.yml"))
+    if relative_path.is_absolute() or ".." in relative_path.parts:
+        raise ResumeError("Profile data must be a relative path inside the repository")
+    return load_yaml(ROOT / relative_path)
+
+
 def encrypt_pdf(source: Path, destination: Path, user_password: str) -> None:
     if len(user_password) > 40:
         raise ResumeError("PDF_PASSWORD must be 40 characters or fewer")
@@ -254,12 +261,12 @@ def main() -> int:
     if args.profile and args.all:
         raise ResumeError("Use either --profile NAME or --all, not both")
 
-    data = load_yaml(DATA_PATH)
     profile_names = [args.profile] if args.profile else sorted(path.stem for path in PROFILES_PATH.glob("*.yml"))
     languages = [args.language] if args.language else sorted(LANGUAGES)
 
     for profile_name in profile_names:
         profile = load_profile(profile_name)
+        data = load_profile_data(profile)
         for language in languages:
             validate_model(data, profile, language)
             print(f"Validated profile '{profile_name}' ({language})")

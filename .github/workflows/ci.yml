@@ -25,6 +25,12 @@ jobs:
       - name: Build synthetic English and Spanish PDFs
         run: docker compose run --rm resume build --profile example
 
+      - name: Validate real DevOps Engineer profile
+        run: docker compose run --rm resume validate --profile devops-engineer
+
+      - name: Build real English and Spanish PDFs
+        run: docker compose run --rm resume build --profile devops-engineer
+
       - name: Upload synthetic PDFs
         uses: actions/upload-artifact@v4
         with:

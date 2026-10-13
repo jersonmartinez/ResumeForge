@@ -1,0 +1,26 @@
+name: devops-engineer
+data: data/jerson.yml
+summary:
+  en: data/summaries/jerson.en.md
+  es: data/summaries/jerson.es.md
+include:
+  experience:
+    - mindtech-nubity
+    - pliret-prb
+    - coderslab
+    - hotaka-leader
+    - hotaka-engineer
+    - training
+    - elite-online-media
+  skills:
+    - Infrastructure
+    - Cloud
+    - Virtualization
+    - Containers and Orchestration
+    - Infrastructure as Code (IaC)
+    - DevOps & CI/CD
+    - Monitoring and Observability
+    - Security and Governance
+    - Generative AI & AI Engineering
+    - Development and Databases
+    - Languages

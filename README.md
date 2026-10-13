@@ -23,11 +23,13 @@ The project separates content from presentation:
 ```bash
 docker compose run --rm resume validate --profile example
 docker compose run --rm resume build --profile example
+# Build the real DevOps Engineer profile
+docker compose run --rm resume build --profile devops-engineer
 ```
 
 The profile command builds both English and Spanish PDFs by default. To build one language only, add `--language en` or `--language es`. Generated files are written to `output/` and are not committed by default.
 
-The current synthetic profile uses the same structure as the supplied references. Replace the contents of `data/`, add a profile under `profiles/`, and keep longer summaries in `data/summaries/`.
+The `example` profile uses synthetic data for CI. The `devops-engineer` profile uses the public reference CV data in `data/jerson.yml`. Add additional datasets and profiles without changing the renderer, and keep longer summaries in `data/summaries/`.
 
 To encrypt generated PDFs locally, copy `.env.example` to `.env`, set `PDF_PASSWORD` to a password of up to 40 characters, and run the same build command. The password is not written to the PDF filename, source files, or logs.
 

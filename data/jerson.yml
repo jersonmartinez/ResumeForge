@@ -1,0 +1,205 @@
+personal:
+  name: Jerson Martínez
+  headline:
+    en: Senior Infrastructure & Cloud Engineer | DevOps | Cloud Architect
+    es: Senior Infrastructure & Cloud Engineer | DevOps | Cloud Architect
+  phone: "+50589630866"
+  location: "GMT-6"
+  email: jersonmartinezsm@gmail.com
+  linkedin: https://www.linkedin.com/in/jersonmartinezsm/
+  website: https://www.jersonmartinez.com
+
+experience:
+  - id: mindtech-nubity
+    title:
+      en: DevOps Tech Lead
+      es: DevOps Tech Lead
+    company: MindTech - Nubity
+    dates:
+      en: October, 2025 - Present
+      es: Octubre, 2025 - Actualidad
+    bullets:
+      en:
+        - Lead the design, implementation, and modernization of hybrid infrastructure for high-profile clients across Latin America using AWS, Azure, Terraform, and Ansible.
+        - Lead Landing Zone, AWS MAP, ETL migration, GenAI, high availability, disaster recovery, governance, FinOps, and right-sizing initiatives.
+      es:
+        - Lidero el diseño, implementación y modernización de infraestructura híbrida para clientes de alto perfil en Latinoamérica mediante AWS, Azure, Terraform y Ansible.
+        - Dirijo iniciativas de Landing Zones, AWS MAP, migraciones ETL, GenAI, alta disponibilidad, Disaster Recovery, gobernanza, FinOps y Right-Sizing.
+  - id: pliret-prb
+    title:
+      en: Sr. DevOps Engineer (Consultant)
+      es: Sr. DevOps Engineer (Consultor)
+    company: Pliret - PRB
+    dates:
+      en: August, 2025 - Present
+      es: Agosto, 2025 - Actualidad
+    bullets:
+      en:
+        - Manage Google Cloud infrastructure and technology platforms for Premium Restaurant Brands and brands including KFC and McDonald's.
+        - Implement infrastructure governance with Terraform, Ansible, and GitHub Actions while collaborating on Kubernetes and critical services.
+      es:
+        - Administro infraestructura y plataformas tecnológicas sobre Google Cloud para Premium Restaurant Brands y marcas como KFC y McDonald's.
+        - Implemento gobernanza de infraestructura con Terraform, Ansible y GitHub Actions, colaborando en plataformas Kubernetes y servicios críticos.
+  - id: coderslab
+    title:
+      en: DevOps Specialist
+      es: DevOps Specialist
+    company: CodersLab
+    dates:
+      en: February, 2025 - July, 2025
+      es: Febrero, 2025 - Julio, 2025
+    bullets:
+      en:
+        - Modernized AWS infrastructure for Coca-Cola Andina using Terraform and GitHub Actions.
+        - Implemented serverless solutions, optimized CI/CD, and strengthened infrastructure governance.
+      es:
+        - Participé en la modernización de infraestructura AWS para Coca-Cola Andina mediante Terraform y GitHub Actions.
+        - Implementé soluciones serverless, optimicé CI/CD y fortalecí la gobernanza de infraestructura.
+  - id: hotaka-leader
+    title:
+      en: DevOps Technical Leader
+      es: Líder Técnico DevOps
+    company: Hotaka iKhodi
+    dates:
+      en: February, 2023 - February, 2025
+      es: Febrero, 2023 - Febrero, 2025
+    bullets:
+      en:
+        - Led cloud infrastructure teams for international clients including Avianca, Flyr, SunExpress, and Cyprus Airways.
+        - Defined Infrastructure as Code standards and drove high availability, disaster recovery, security, governance, and optimization practices across AWS and Azure.
+      es:
+        - Lideré equipos de infraestructura cloud para clientes internacionales como Avianca, Flyr, SunExpress y Cyprus Airways.
+        - Definí estándares de Infrastructure as Code e impulsé prácticas de alta disponibilidad, Disaster Recovery, seguridad, gobernanza y optimización en AWS y Azure.
+  - id: hotaka-engineer
+    title:
+      en: DevOps Engineer
+      es: Ingeniero DevOps
+    company: Hotaka iKhodi
+    dates:
+      en: September, 2020 - February, 2023
+      es: Septiembre, 2020 - Febrero, 2023
+    bullets:
+      en:
+        - Managed and optimized infrastructure for multiple clients, reducing operating costs by more than 60% through automation, right-sizing, and cloud modernization.
+        - Developed Infralytics, a server management and monitoring platform that improved operational efficiency.
+      es:
+        - Administré y optimicé infraestructura para múltiples clientes, reduciendo los costos operativos en más de un 60% mediante automatización, Right-Sizing y modernización cloud.
+        - Desarrollé Infralytics, una plataforma de administración y monitoreo de servidores que mejoró la eficiencia operativa.
+  - id: training
+    title:
+      en: DevOps and DevSecOps Trainer
+      es: Instructor DevOps y DevSecOps
+    company: OpenWebinars & Udemy
+    dates:
+      en: February, 2022 - Present
+      es: Febrero, 2022 - Actualidad
+    bullets:
+      en:
+        - Design and teach DevOps, cloud computing, Infrastructure as Code, Kubernetes, Docker, GitHub Actions, Python, and Go programs for professionals in Latin America and Spain.
+        - Combine enterprise infrastructure management with modern automation, observability, and cloud architecture practices.
+      es:
+        - Diseño e imparto programas de DevOps, cloud computing, Infrastructure as Code, Kubernetes, Docker, GitHub Actions, Python y Go para profesionales de Latinoamérica y España.
+        - Combino la administración de infraestructura empresarial con prácticas modernas de automatización, observabilidad y arquitectura cloud.
+  - id: elite-online-media
+    title:
+      en: Full-Stack Developer
+      es: Desarrollador Full-Stack
+    company: Elite Online Media
+    dates:
+      en: January, 2019 - September, 2020
+      es: Enero, 2019 - Septiembre, 2020
+    bullets:
+      en:
+        - Developed enterprise web solutions and administered GNU/Linux and Windows servers, improving backend performance by more than 80%.
+        - Automated deployments and implemented continuous integration practices for distributed teams.
+      es:
+        - Desarrollé soluciones web empresariales y administré servidores GNU/Linux y Windows, mejorando el rendimiento del backend en más de un 80%.
+        - Automaticé despliegues e implementé prácticas de integración continua para equipos distribuidos.
+
+skills:
+  - name:
+      en: Infrastructure
+      es: Infraestructura
+    values:
+      en: Hybrid infrastructure, Windows Server, Linux, Microsoft Entra ID, Active Directory, IIS, DNS, DHCP, LDAP, NTP, capacity planning, right-sizing, BCP, DRP, high availability, failover, multi-AZ, multi-region
+      es: Infraestructura híbrida, Windows Server, Linux, Microsoft Entra ID, Active Directory, IIS, DNS, DHCP, LDAP, NTP, capacity planning, right-sizing, BCP, DRP, alta disponibilidad, failover, multi-AZ, multi-region
+  - name:
+      en: Cloud
+      es: Cloud
+    values: AWS, Azure, GCP, AWS MAP, Landing Zones, Cloud Governance, Infrastructure Modernization
+  - name:
+      en: Virtualization
+      es: Virtualización
+    values: VMware vSphere, Hyper-V, KVM, VirtualBox, Vagrant
+  - name:
+      en: Containers and Orchestration
+      es: Contenedores y Orquestación
+    values: Docker, Podman, WSLC, Kubernetes
+  - name:
+      en: Infrastructure as Code (IaC)
+      es: Infrastructure as Code (IaC)
+    values: Terraform, Ansible, Pulumi, CloudFormation, AWS SAM
+  - name:
+      en: DevOps & CI/CD
+      es: DevOps & CI/CD
+    values: Git, GitHub Actions, Azure DevOps, Rundeck
+  - name:
+      en: Monitoring and Observability
+      es: Monitoreo y Observabilidad
+    values: Grafana, Prometheus, ELK Stack, Filebeat, Telegraf, Datadog, Zabbix, SolarWinds, Nagios
+  - name:
+      en: Security and Governance
+      es: Seguridad y Gobernanza
+    values: ITIL, ISO 27001, DevSecOps, FinOps, IAM, AWS Security Hub, GuardDuty, Inspector, Secrets Manager
+  - name:
+      en: Generative AI & AI Engineering
+      es: IA Generativa e Ingeniería de IA
+    values: RAG, LLM orchestration, model evaluation, AWS Bedrock, Gemini, LibreChat, AI-assisted engineering, Kiro, Devin, Claude Code, Cursor
+  - name:
+      en: Development and Databases
+      es: Desarrollo y Bases de Datos
+    values: Python, PowerShell, Bash, Go, JavaScript, PHP, HTML, CSS, SQL, PostgreSQL, MySQL, SQL Server, MongoDB, Redis, DynamoDB
+  - name:
+      en: Languages
+      es: Idiomas
+    values:
+      en: Spanish (Native) | English (B1+ - Professional Working Proficiency)
+      es: Español (Nativo) | Inglés (B1+ - Competencia Profesional)
+
+education:
+  - title:
+      en: Certifications & Courses
+      es: Certificaciones y Cursos
+    institution: A Cloud Guru, OpenWebinars, Udemy, PluralSight, LinkedIn, Crashell
+    dates:
+      en: Ongoing since December 2017
+      es: En curso desde diciembre de 2017
+  - title:
+      en: Telematics Engineer
+      es: Ingeniero en Telemática
+    institution: UNAN - León
+    dates:
+      en: January 2013 - December 2017
+      es: Enero 2013 - Diciembre 2017
+
+certifications:
+  - name: AWS Certified DevOps Engineer - Professional (DOP-C02)
+    issuer: Amazon Web Services
+  - name: AWS Certified Solutions Architect - Associate (SAA-C03)
+    issuer: Amazon Web Services
+  - name: AWS Certified Cloud Practitioner (CCP)
+    issuer: Amazon Web Services
+  - name: Azure Solutions Architect Expert (AZ-305)
+    issuer: Microsoft Azure
+  - name: Azure DevOps Engineer Expert (AZ-400)
+    issuer: Microsoft Azure
+  - name: Azure Administrator Associate (AZ-104)
+    issuer: Microsoft Azure
+  - name: Azure Security Engineer Associate (AZ-500)
+    issuer: Microsoft Azure
+  - name: Azure Fundamentals (AZ-900)
+    issuer: Microsoft Azure
+  - name: Azure Data Fundamentals (DP-900)
+    issuer: Microsoft Azure
+  - name: Foundations
+    issuer: GitHub
